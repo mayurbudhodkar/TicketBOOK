@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Images/BackG.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.navbar{
+    width:1200px;
+    height: 75px;
+    margin: auto;
+    
+}
+.icon{
+   width: 200px; 
+   float: left;
+   height: 70px;
+}
+.logo{
+    color: #8cd8e2;
+    font-size: 35px;
+    padding-left: 3px;
+    float: left;
+    padding-top:10px ;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:#12b5ca ;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left:270px ;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ffff ;
+    margin-top: 13px;
+    color: #ffff;
+    border-radius: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: lightseagreen;
+    border: 2px solid lightseagreen;
+    margin-top: 13px;
+    color: #ffff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+
+
+.container{
+    font-weight: bold;
+    width: 360px;
+    height: 600px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 12px rgb(6, 197, 188);
+}
+
+form H2{
+    border-radius: 100px;
+    height: 50px;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right,#242c2c,#06fff3);
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 20px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+
+
+}
+form input::placeholder{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+
+.container label{
+    margin: 10px;
+    padding: 40pxpx;
+    color: black;
+    font-weight: 700;
+}
+
+form option{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border:0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#242c2c,#06fff3);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#form2{
+    left: 450px;
+
+}
+#form3{
+    left: 450px;
+}
+
+#form4{
+    left: 450px;
+}
+
+#form5{
+    left: 450px;
+}
+
+#form6{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px black;
+    position: relative;
+}
+
+.step-col{
+    margin: 5px;
+    width: 120px;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    position: relative;
+
+}
+
+#progress{
+    
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    background: linear-gradient(to right,#242c2c,#06fff3);
+    transition: 1s;
+
+}
+
+#progress::after{
+    content: '';
+    height: 0px;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #06fff3;
+}
+
+.step-col{
+    font-weight: bolder;
+    color: black;
+}
